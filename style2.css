@@ -1,0 +1,521 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@580&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+  font-family: 'Nunito',sans-serif;
+}
+.wrapper{
+	background: url(tf_background.jpeg) no-repeat;
+	opacity: 100%;
+	background-size:  cover;
+	height:  100vh;
+
+}
+
+.navigation{
+	height: 90px;
+	width: 100%;
+	background: rgba(0,0,0,0.4);
+}
+
+
+.logo {
+	width: 110px;
+	height: auto;
+	padding: 0px 90px;
+	
+}
+ a {
+  text-decoration: none;
+  font-family: 'Roboto',sans-serif;
+  font-size: 18px;
+  position: left;
+}
+
+a:hover{
+	color: #454B1B;
+}
+
+
+ nav {
+  font-family:'Roboto',sans-serif;
+  padding: 5px 5px;
+  margin: 1px;
+  display: flex;
+ 
+}
+
+ ul {
+  background: cyan;
+  list-style: none;
+  position: right;
+}
+
+/*position navbar*/
+ li {
+  color: #fff;
+  background: none;
+  display: inline-block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  padding: 10px;
+  margin: 20px;
+}
+  
+ li a {
+  color: #fff;
+}
+
+ li:hover {
+  background: darkcyan;
+  cursor: pointer;
+	border-radius: 2px;
+	opacity: 5;
+}
+
+ ul li ul {
+ 	background: cyan;
+ 	text-decoration: none;
+	color: white;
+	padding: 1px 2px;
+	font-family: 'Roboto',sans-serif;
+	transition: all 0.5s ease;
+	visibility: hidden;
+	display: none;
+	min-width: 5rem;
+	position: relative;
+  /*background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  right: 0;
+  display: none;*/
+}
+
+ul li:hover > ul,
+ ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+
+}
+
+ ul li ul li {
+  clear: both;
+  width: 10%;
+
+}
+/*.navbar ul{
+	float: right;
+	margin-right: 0px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 90px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	padding: 8px 13px;
+	font-family: 'Roboto',sans-serif;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: darkcyan;
+	border-radius: 2px;
+}
+*/
+
+.wrapper .center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select:  none;
+}
+.center h1{
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	width: 900px;
+	text-align: center;
+}
+.center h2{
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	width: 885px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.left h4{
+	color: white;
+	font-family: sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	width: 885px;
+	margin: 10px;
+	position: center;
+}
+.vertical-center .buttons{
+	margin: 0px 700px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+.buttons button{
+	height: 50px;
+	width: 190px;
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	background: lightcyan;
+	border: 1px solid #00FFFF;
+	outline: none;
+	cursor: pointer;
+	border-radius: 19px;
+	margin: 20px;
+}
+.buttons .btn{
+	margin-left: 0px;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 3px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.buttons button:hover{
+	background: #00FFFF;
+
+}
+
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background: white;
+	border-radius: 10px;
+}
+.center h1{
+	text-align: center;
+	padding:0 0 20px 0;
+	border-bottom: 1px solid silver;
+}
+.center form{
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+form .txt_field{
+	position: relative;
+	border-bottom: 2px solid #adadad;
+	margin: 30px 0;
+}
+.txt_field input{
+	width: 50%;
+	padding:0 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background: none;
+	outline: none;
+}
+.txt-field label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad;
+	transform: translateY(-50%);
+	font-size: 16px;
+	pointer-events: none;
+	transition: .5s;
+}
+.txt_field span::before{
+	content:'';
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background: #2691d9;
+	transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+	top: -5px;
+	color: #2691d9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+	width 100%;
+}
+.pass{
+	margin: -5px 0 20px 5px;
+	color: #a6a6a6;
+	cursor: pointer;
+}
+.pass:hover{
+	text-decoration: underline;
+}
+input[type="submit"]{
+	border: none;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+	border-color: #2691d9;
+	transition: .5s;
+}
+
+input[type="button"]{
+	background-color: #2e8084;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover{
+	background-color: #59c0c4;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 5;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #afafaf;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/*form*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 11px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #2e8084;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #59c0c4;
+}
+
+input[type="button"]{
+	background-color: #2e8084;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="button"]:hover{
+	background-color: #59c0c4;
+}
+
+input[type="reset"]{
+	background-color: #2e8084;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="reset"]:hover{
+	background-color: #59c0c4;
+}
+
+/*view table*/
+#staffs {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#staffs td, #staffs th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#staffs tr:nth-child(even){background-color: #f2f2f2;}
+
+#staffs tr:hover {background-color: #ddd;}
+
+#staffs th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/*view table*/
+#attendance {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#attendance td, #attendance th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#attendance tr:nth-child(even){background-color: #f2f2f2;}
+
+#attendance tr:hover {background-color: #ddd;}
+
+#attendance th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/*view table*/
+#schedule {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#schedule td, #schedule th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#schedule tr:nth-child(even){background-color: #f2f2f2;}
+
+#schedule tr:hover {background-color: #ddd;}
+
+#schedule th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.containerform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  margin: 100px;
+  margin-top: 20px;
+}
+
+.containerformm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  margin: 100px;
+  margin-top: 20px;
+}
+
+.rq {
+  color: #FF0000;
+  font-size: 10pt;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
